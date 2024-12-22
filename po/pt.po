@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: battery-health-charging\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-04 09:14-0700\n"
+"POT-Creation-Date: 2024-12-21 22:40-0800\n"
 "PO-Revision-Date: 2024-04-19 16:08-0700\n"
 "Last-Translator: \n"
 "Language-Team: Portuguese\n"
@@ -38,7 +38,11 @@ msgstr "Configurações"
 msgid "Show details"
 msgstr "Ver detalhes"
 
-#: lib/notifier.js:81
+#: lib/notifier.js:68 ui/about.ui:75
+msgid "Read me"
+msgstr "Leia-me"
+
+#: lib/notifier.js:85
 msgid ""
 "Unsupported device.\n"
 "This extension is not compatible with your device."
@@ -46,46 +50,46 @@ msgstr ""
 "Dispositivo não suportado.\n"
 "Esta extensão não é compatível com o seu dispositivo."
 
-#: lib/notifier.js:83
+#: lib/notifier.js:87
 msgid "Missing dependencies"
 msgstr "Dependências em Falta"
 
-#: lib/notifier.js:87
+#: lib/notifier.js:91
 msgid "Please install polkit from extension settings under Installation."
 msgstr "Instale o polkit nas configurações de extensão em Instalação."
 
-#: lib/notifier.js:91
+#: lib/notifier.js:95
 msgid "Please update polkit from extension settings under Installation."
 msgstr "Atualize o polkit nas configurações de extensão em Instalação."
 
-#: lib/notifier.js:95
+#: lib/notifier.js:99
 msgid "Install check failed."
 msgstr ""
 
-#: lib/notifier.js:99
+#: lib/notifier.js:103
 msgid "Install check timed out."
 msgstr ""
 
-#: lib/notifier.js:103
+#: lib/notifier.js:107
 #, javascript-format
 msgid "Encountered an unexpected error. (%s)"
 msgstr "Battery Health Charging encontrou um erro inesperado.(%s)"
 
-#: lib/notifier.js:107
+#: lib/notifier.js:111
 #, javascript-format
 msgid "Charging threshold not updated. (%s)"
 msgstr "Parar carregamento do valor limite.(%s)"
 
-#: lib/notifier.js:111
+#: lib/notifier.js:115
 #, javascript-format
 msgid "Threshold update process timed out. (%s)"
 msgstr ""
 
-#: lib/notifier.js:115
+#: lib/notifier.js:119
 msgid "Apply correct Bios Password to set threshold."
 msgstr "Aplicar a senha correta do BIOS para definir o limiar."
 
-#: lib/notifier.js:119
+#: lib/notifier.js:123
 #, javascript-format
 msgid ""
 "Battery 1\n"
@@ -95,12 +99,12 @@ msgstr ""
 "Limites de carga são definidos para %d / %d %%"
 
 #. TRANSLATORS: Keep translation short if possible. Maximum  34 characters can be displayed here
-#: lib/notifier.js:124 lib/thresholdPanel.js:336
+#: lib/notifier.js:128 lib/thresholdPanel.js:335
 #, javascript-format
 msgid "Charge thresholds are set to %d / %d %%"
 msgstr "Limite de carga: %d / %d %%"
 
-#: lib/notifier.js:129
+#: lib/notifier.js:133
 #, javascript-format
 msgid ""
 "Battery 1\n"
@@ -110,12 +114,12 @@ msgstr ""
 "O limite de carregamento está definido para %d%%"
 
 #. TRANSLATORS: Keep translation short if possible. Maximum  34 characters can be displayed here
-#: lib/notifier.js:133 lib/thresholdPanel.js:340
+#: lib/notifier.js:137 lib/thresholdPanel.js:339
 #, javascript-format
 msgid "Charging Limit is set to %d%%"
 msgstr "Limite de carga: %d%%"
 
-#: lib/notifier.js:137
+#: lib/notifier.js:141
 #, javascript-format
 msgid ""
 "Battery 2\n"
@@ -124,7 +128,7 @@ msgstr ""
 "Bateria 2\n"
 "Limites de carga são definidos para %d / %d %%"
 
-#: lib/notifier.js:142
+#: lib/notifier.js:146
 #, javascript-format
 msgid ""
 "Battery 2\n"
@@ -133,27 +137,27 @@ msgstr ""
 "Bateria 2\n"
 "O limite de carregamento está definido para %d%%"
 
-#: lib/notifier.js:147
+#: lib/notifier.js:151
 msgid "Charging Mode is set to Full Capacity"
 msgstr "Modo de carregamento definido para equilibrado"
 
-#: lib/notifier.js:151
+#: lib/notifier.js:155
 msgid "Charging Mode is set to Balanced"
 msgstr "Modo de carregamento definido para equilibrado"
 
-#: lib/notifier.js:155
+#: lib/notifier.js:159
 msgid "Charging Mode is set to Maximum Lifespan"
 msgstr "Modo de carregamento definido para vida útil máx"
 
-#: lib/notifier.js:159
+#: lib/notifier.js:163
 msgid "Charging Mode is set to Express"
 msgstr "Modo de carregamento definido para Express"
 
-#: lib/notifier.js:163
+#: lib/notifier.js:167
 msgid "Charging Mode is set to Adaptive"
 msgstr "Modo de carregamento definido para adaptável"
 
-#: lib/notifier.js:167
+#: lib/notifier.js:171
 msgid ""
 "Threshold not applied: Battery level above 75%. Please unplug the charger "
 "and discharge the battery below 75% to apply the 80% limit."
@@ -175,25 +179,25 @@ msgid "Battery 2"
 msgstr "Bateria 2"
 
 #. TRANSLATORS: Keep translation short if possible. Maximum  21 characters can be displayed here
-#: lib/thresholdPanel.js:32 lib/thresholdPanel.js:316
+#: lib/thresholdPanel.js:32 lib/thresholdPanel.js:315
 msgid "Battery Charging Mode"
 msgstr "Modo De Carregamento"
 
 #. TRANSLATORS: Keep translation short if possible. Maximum  34 characters can be displayed here
-#: lib/thresholdPanel.js:65 preferences/thresholdPrimary.js:201
-#: preferences/thresholdSecondary.js:196
+#: lib/thresholdPanel.js:65 preferences/thresholdPrimary.js:204
+#: preferences/thresholdSecondary.js:199
 msgid "Full Capacity Mode"
 msgstr "Capacidade máx"
 
 #. TRANSLATORS: Keep translation short if possible. Maximum  34 characters can be displayed here
-#: lib/thresholdPanel.js:71 preferences/thresholdPrimary.js:205
-#: preferences/thresholdSecondary.js:200
+#: lib/thresholdPanel.js:71 preferences/thresholdPrimary.js:208
+#: preferences/thresholdSecondary.js:203
 msgid "Balanced Mode"
 msgstr "Modo Equilibrado"
 
 #. TRANSLATORS: Keep translation short if possible. Maximum  34 characters can be displayed here
-#: lib/thresholdPanel.js:77 preferences/thresholdPrimary.js:209
-#: preferences/thresholdSecondary.js:204
+#: lib/thresholdPanel.js:77 preferences/thresholdPrimary.js:212
+#: preferences/thresholdSecondary.js:207
 msgid "Maximum Lifespan Mode"
 msgstr "Modo de vida útil máximo"
 
@@ -208,71 +212,71 @@ msgid "Express Mode"
 msgstr "Modo Express"
 
 #. TRANSLATORS: Keep translation short if possible. Maximum  21 characters can be displayed here
-#: lib/thresholdPanel.js:320
+#: lib/thresholdPanel.js:319
 msgid "Battery Uninstalled"
 msgstr "Bateria desinstalada"
 
 #. TRANSLATORS: Keep translation short if possible. Maximum  34 characters can be displayed here
-#: lib/thresholdPanel.js:330
+#: lib/thresholdPanel.js:329
 msgid "No Battery detected!"
 msgstr "Nenhuma bateria detectada!"
 
 #. TRANSLATORS: Keep translation short if possible. Maximum  34 characters can be displayed here
-#: lib/thresholdPanel.js:344
+#: lib/thresholdPanel.js:343
 msgid "Charging Mode: Full Capacity"
 msgstr "Modo de Carregamento: Equilibrado"
 
 #. TRANSLATORS: Keep translation short if possible. Maximum  34 characters can be displayed here
-#: lib/thresholdPanel.js:347
+#: lib/thresholdPanel.js:346
 msgid "Charging Mode: Balanced"
 msgstr "Modo de Carregamento: Equilibrado"
 
 #. TRANSLATORS: Keep translation short if possible. Maximum  34 characters can be displayed here
-#: lib/thresholdPanel.js:350
+#: lib/thresholdPanel.js:349
 msgid "Charging Mode: Maximum Lifespan"
 msgstr "Modo de carregamento: Vida útil máx"
 
 #. TRANSLATORS: Keep translation short if possible. Maximum  34 characters can be displayed here
-#: lib/thresholdPanel.js:353
+#: lib/thresholdPanel.js:352
 msgid "Charging Mode: Adaptive"
 msgstr "Modo de Carregamento: Adaptável"
 
 #. TRANSLATORS: Keep translation short if possible. Maximum  34 characters can be displayed here
-#: lib/thresholdPanel.js:356
+#: lib/thresholdPanel.js:355
 msgid "Charging Mode: Express"
 msgstr "Modo de carregamento: Express"
 
 #. TRANSLATORS: Keep translation short if possible. Maximum  13 characters can be displayed here
-#: lib/thresholdPanel.js:398
+#: lib/thresholdPanel.js:397
 msgid "Uninstalled"
 msgstr "Desinstalado"
 
 #. TRANSLATORS: Keep translation short if possible. Maximum  13 characters can be displayed here
-#: lib/thresholdPanel.js:401
+#: lib/thresholdPanel.js:400
 msgid "Full Capacity"
 msgstr "Capacidade máx"
 
 #. TRANSLATORS: Keep translation short if possible. Maximum  13 characters can be displayed here
-#: lib/thresholdPanel.js:404
+#: lib/thresholdPanel.js:403
 msgid "Balanced"
 msgstr "Equilibrado"
 
 #. TRANSLATORS: Keep translation short if possible. Maximum  13 characters can be displayed here
-#: lib/thresholdPanel.js:407
+#: lib/thresholdPanel.js:406
 msgid "Max Lifespan"
 msgstr "Vida útil máx"
 
 #. TRANSLATORS: Keep translation short if possible. Maximum  13 characters can be displayed here
-#: lib/thresholdPanel.js:410
+#: lib/thresholdPanel.js:409
 msgid "Adaptive"
 msgstr "Adaptável"
 
 #. TRANSLATORS: Keep translation short if possible. Maximum  13 characters can be displayed here
-#: lib/thresholdPanel.js:413
+#: lib/thresholdPanel.js:412
 msgid "Express"
 msgstr "Express"
 
-#: lib/thresholdPanel.js:450
+#: lib/thresholdPanel.js:449
 msgid "Force Discharge"
 msgstr "Descarga Forçada"
 
@@ -362,19 +366,19 @@ msgstr "Battery Health Charging encontrou um erro inesperado."
 msgid "Threshold"
 msgstr "Limite"
 
-#: preferences/thresholdPrimary.js:199 preferences/thresholdSecondary.js:194
+#: preferences/thresholdPrimary.js:202 preferences/thresholdSecondary.js:197
 msgid "Full Capacity Mode (Currently Active)"
 msgstr "Modo de capacidade máxima (Ativo)"
 
-#: preferences/thresholdPrimary.js:203 preferences/thresholdSecondary.js:198
+#: preferences/thresholdPrimary.js:206 preferences/thresholdSecondary.js:201
 msgid "Balanced Mode (Currently Active)"
 msgstr "Modo equilibrado (Ativo)"
 
-#: preferences/thresholdPrimary.js:207 preferences/thresholdSecondary.js:202
+#: preferences/thresholdPrimary.js:210 preferences/thresholdSecondary.js:205
 msgid "Maximum Lifespan Mode (Currently Active)"
 msgstr "Modo de vida útil máximo (Ativo)"
 
-#: preferences/thresholdPrimary.js:213 preferences/thresholdSecondary.js:208
+#: preferences/thresholdPrimary.js:216 preferences/thresholdSecondary.js:211
 #, javascript-format
 msgid "<i>Accepted Value : %d to %d</i>"
 msgstr "<i>Valor Aceito: %d para %d</i>"
@@ -382,10 +386,6 @@ msgstr "<i>Valor Aceito: %d para %d</i>"
 #: ui/about.ui:5
 msgid "About"
 msgstr "Sobre"
-
-#: ui/about.ui:75
-msgid "Read me"
-msgstr "Leia-me"
 
 #: ui/about.ui:97
 msgid "Report an Issue"
@@ -411,12 +411,12 @@ msgstr "Crowdin"
 msgid "Online Tutorials"
 msgstr "Tutoriais Online"
 
-#: ui/apple.ui:5 ui/chromebook.ui:5 ui/dell.ui:5 ui/framework.ui:5
+#: ui/apple.ui:5 ui/asus.ui:5 ui/chromebook.ui:5 ui/dell.ui:5 ui/framework.ui:5
 #: ui/thinkpad.ui:5
 msgid "Device"
 msgstr "Dispositivo"
 
-#: ui/apple.ui:9 ui/chromebook.ui:9 ui/dell.ui:9 ui/framework.ui:9
+#: ui/apple.ui:9 ui/asus.ui:9 ui/chromebook.ui:9 ui/dell.ui:9 ui/framework.ui:9
 #: ui/thinkpad.ui:9
 msgid "Device settings"
 msgstr "Definições do dispositivo"
@@ -424,6 +424,17 @@ msgstr "Definições do dispositivo"
 #: ui/apple.ui:12
 msgid "Change the behavior of charging indicator light"
 msgstr "Alterar o comportamento do indicador de carregamento"
+
+#: ui/asus.ui:12 ui/thinkpad.ui:24
+msgid "Skip Threshold Verification"
+msgstr ""
+
+#: ui/asus.ui:13 ui/thinkpad.ui:25
+msgid ""
+"Due to firmware or kernel bugs, some laptops may report incorrect thresholds "
+"consistently or after restart, sleep, or hibernate. Enable this setting to "
+"force threshold updates if you encounter this issue."
+msgstr ""
 
 #: ui/chromebook.ui:12 ui/dell.ui:12 ui/framework.ui:12
 msgid "Select configuration for charging mode"
@@ -584,17 +595,6 @@ msgid ""
 msgstr ""
 "Ativar opção para descarregar a bateria forçadamente quando o nível da "
 "bateria estiver acima do limiar atual"
-
-#: ui/thinkpad.ui:24
-msgid "Skip Threshold Verification"
-msgstr ""
-
-#: ui/thinkpad.ui:25
-msgid ""
-"Due to firmware or kernel bugs, some laptops may report incorrect thresholds "
-"consistently or after restart, sleep, or hibernate. Enable this setting to "
-"force threshold updates if you encounter this issue."
-msgstr ""
 
 #: ui/thresholdPrimary.ui:21 ui/thresholdSecondary.ui:21
 msgid "Customize"
