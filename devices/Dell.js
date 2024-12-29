@@ -346,6 +346,9 @@ export const DellSmBiosSingleBattery = GObject.registerClass({
     }
 
     destroy() {
+        if (this._delayReadTimeoutId)
+            GLib.source_remove(this._delayReadTimeoutId);
+        this._delayReadTimeoutId = null;
         this._secretSchema = null;
     }
 });
